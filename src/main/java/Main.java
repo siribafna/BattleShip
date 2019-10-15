@@ -7,7 +7,7 @@ public class Main {
 
         char[][] battleField = new char[8][8];
         battleField = createLargestShip();
-        //battleField = createSecondLargestShip(battleField);
+        battleField = createSecondLargestShip(battleField);
         battleField = createThirdShip(battleField);
         battleField = createSecondShip(battleField);
 
@@ -43,7 +43,7 @@ public class Main {
         char[][] battleField = new char[8][8];
         for(int i = 0; i < 8; i++) {
             for(int j = 0; j < 8; j++) {
-                battleField[i][j] = '!';
+                battleField[i][j] = '-';
             }
         }
         return battleField;
